@@ -1,0 +1,17 @@
+{
+    "name": "rutra/portfolio",
+    "description": "A personal portfolio website.",
+    "autoload": {
+        "psr-4": {
+            "Rutra\\Portfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ArturC03",
+            "email": "arturvicentecruz@proton.me"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
