@@ -1,3 +1,7 @@
+<?php 
+require 'vendor/autoload.php';
+require 'header.php'
+?>
 <!doctype html>
 <html>
 <head>
@@ -6,7 +10,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
+  <h1 class="text-3xl font-bold">
     Hello world!
   </h1>
 </body>
