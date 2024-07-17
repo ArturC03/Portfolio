@@ -1,17 +1,17 @@
-# Use an official Node.js 16 image as a base
-FROM node:latest
+FROM archlinux:latest
 
 # Set the working directory to /app
 WORKDIR /app
 
-# Copy the package.json file
-COPY package*.json ./
+# Update the package list and install necessary packages
+RUN pacman -Syy && pacman -S --noconfirm base-devel git curl
 
-# Install dependencies
-RUN npm install
+# Install Node.js
+RUN curl -sL https://deb.nodesource.com/setup_latest.x | bash
+RUN pacman -S --noconfirm nodejs
 
-# Copy the rest of the code
-COPY . .
+# Set the environment variables
+ENV NODE_ENV=development
 
 # Expose the port
 EXPOSE 3000
