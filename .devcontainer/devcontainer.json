@@ -1,5 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-  }
+  "name": "Next.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install",
+  "postAttachCommand": "npm run dev",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "DavidAnson.vscode-markdownlint",
+        "ms-vscode-remote.remote-containers"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [3000]
 }
