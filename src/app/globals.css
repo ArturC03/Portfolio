@@ -78,5 +78,5 @@ h1 {
 }
 
 .projectCard {
-  @apply bg-stone-900 bg-opacity-30 rounded-lg hover:border-white hover:border-opacity-35 hover:bg-opacity-50 transition duration-300 ease-in-out;
+  @apply bg-slate-800 bg-opacity-50 rounded-lg hover:border-white hover:border-opacity-35 hover:bg-opacity-70 transition duration-300 ease-in-out;
 }
