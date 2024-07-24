@@ -12,6 +12,7 @@ import { TbSchool } from "react-icons/tb";
 import { FaSchool } from "react-icons/fa";
 import { FaSuitcase } from "react-icons/fa"
 import { LiaToolsSolid } from "react-icons/lia";
+import { Fullscreen } from "lucide-react";
 export default function Home() {
   return (
     <main className="absolute justify-items-center text-left text-wrap left-80 right-80 top-40 py-4">
@@ -81,13 +82,26 @@ export default function Home() {
     <Separator className="my-4"/>
     
     <h1><LiaToolsSolid /> &nbsp; Work</h1>
-    <div className="flex flex-1 w-full h-auto justify-between justify-items-center">
-      <div className="projectCard w-96 h-96">
-        <h2 className="projectTitle">
-          Lorem Ispum
-        </h2>
-      </div>
-      <div className="projectCard w-96 h-96"></div>
+    <div className="container m-auto grid grid-cols-2 gap-4">
+    <div className="projectCard">
+      <h2 className="text-xl font-bold mb-4">Image To ASCII Converter</h2>
+      <Image
+        alt="Mona Lisa in ASCII"
+        src="/images/AsciiArt.png"
+        width={1000} // Adjusted width to fit better
+        height={1000} // Adjusted height to fit better
+        className="w-full h-auto mb-4"
+      />
+      <p className="text-left mb-4">
+        This project translates any image given to an ASCII version of it
+      </p>
+      <Button className="absolute bottom-4 right-4" variant="outline">
+        <a href="https://img-ascii-art.vercel.app">Enter</a>
+      </Button>
+    </div>
+    <div className="projectCard w-96 h-96"></div>
+    <div className="projectCard w-96 h-96"></div>
+    <div className="projectCard w-96 h-96"></div>
     </div>
    </main>
   );
