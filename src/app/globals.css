@@ -59,11 +59,20 @@
   }
 }
 
+h1 {
+  @apply flex text-wrap text-left text-7xl font-bold py-4;
+}
+
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground px-6 text-lg;
   }
+}
+
+.projectCard {
+  @apply bg-slate-500/25  rounded-lg 
 }
