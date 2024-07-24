@@ -78,5 +78,5 @@ h1 {
 }
 
 .projectCard {
-  @apply relative w-96 h-96 border rounded-lg border-gray-300 p-4;
+  @apply relative flex-1 min-w-[400px] w-96 h-96 border max-w-sm rounded-lg border-gray-300 p-4;
 }

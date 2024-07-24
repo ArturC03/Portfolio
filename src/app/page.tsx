@@ -82,7 +82,7 @@ export default function Home() {
     <Separator className="my-4"/>
     
     <h1><LiaToolsSolid /> &nbsp; Work</h1>
-    <div className="container m-auto grid grid-cols-2 gap-4">
+    <div className="flex flex-wrap place place-items-center justify-center gap-4">
     <div className="projectCard">
       <h2 className="text-xl font-bold mb-4">Image To ASCII Converter</h2>
       <Image
