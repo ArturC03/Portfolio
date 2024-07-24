@@ -24,12 +24,12 @@ export default function Home() {
     <Separator className="my-4"/>
 
     <h1 className=""><TbSchool/>&nbsp; Studies</h1>
-      <ul>
+      <ul className="">
         <li>
 
         <HoverCard>
       <HoverCardTrigger asChild>
-       <Button variant="link" className="px-6 text-lg"><RxDotFilled/> 2013-2017 - Escola Básica do Cedro</Button>
+       <Button variant="link" className="text-wrap px-6 text-lg"><RxDotFilled/> 2013-2017 - Escola Básica do Cedro</Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-full h-full">
         <div className="flex justify-between space-x-4">
@@ -46,7 +46,7 @@ export default function Home() {
         <li>
         <HoverCard>
       <HoverCardTrigger asChild>
-        <Button variant="link" className="px-6 text-lg"><RxDotFilled/> 2017-2022 - Escola EB 2/3 Soares dos Reis</Button>
+        <Button variant="link" className="text-wrap px-6 text-lg"><RxDotFilled/> 2017-2022 - Escola EB 2/3 Soares dos Reis</Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-full h-full">
         <div className="flex justify-between space-x-4">
@@ -63,7 +63,7 @@ export default function Home() {
         <li>
         <HoverCard>
       <HoverCardTrigger asChild>
-        <Button variant="link" className="px-6 text-lg"><RxDotFilled/> 2022-2025 - Colégio de Gaia</Button>
+        <Button variant="link" className="text-wrap px-6 text-lg"><RxDotFilled/> 2022-2025 - Colégio de Gaia</Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-full h-full">
         <div className="flex justify-between space-x-4">
@@ -82,7 +82,11 @@ export default function Home() {
     
     <h1><LiaToolsSolid /> &nbsp; Work</h1>
     <div className="flex flex-1 w-full h-auto justify-between justify-items-center">
-      <div className="projectCard w-80 h-80"></div>
+      <div className="projectCard w-80 h-80">
+        <h2 className="projectTitle">
+          Lorem Ispum
+        </h2>
+      </div>
       <div className="projectCard w-80 h-80"></div>
     </div>
    </main>

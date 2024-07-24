@@ -73,6 +73,10 @@ h1 {
   }
 }
 
+.projectTitle {
+  @apply text-center font-semibold pt-5;
+}
+
 .projectCard {
-  @apply bg-slate-500/25  rounded-lg 
+  @apply bg-stone-900 bg-opacity-30 rounded-lg hover:border-white hover:border-opacity-35 hover:bg-opacity-50 transition duration-700 ease-in-out;
 }
