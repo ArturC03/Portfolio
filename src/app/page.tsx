@@ -82,12 +82,12 @@ export default function Home() {
     
     <h1><LiaToolsSolid /> &nbsp; Work</h1>
     <div className="flex flex-1 w-full h-auto justify-between justify-items-center">
-      <div className="projectCard w-80 h-80">
+      <div className="projectCard w-96 h-96">
         <h2 className="projectTitle">
           Lorem Ispum
         </h2>
       </div>
-      <div className="projectCard w-80 h-80"></div>
+      <div className="projectCard w-96 h-96"></div>
     </div>
    </main>
   );
