@@ -15,7 +15,7 @@ import { LiaToolsSolid } from "react-icons/lia";
 import { Fullscreen } from "lucide-react";
 export default function Home() {
   return (
-    <main className="absolute justify-items-center text-left text-wrap left-80 right-80 top-40 py-4">
+    <div className="absolute justify-items-center text-left text-wrap left-80 right-80 top-40 py-4">
         <h1 className="" id="rutra">Who's Rutra?</h1>
         <p> 
           I'm a crazy <b>17 year old </b>with a big passion for tech and programming who's always looking for new technologies and projects to work on. <br/>
@@ -103,6 +103,6 @@ export default function Home() {
     <div className="projectCard w-96 h-96"></div>
     <div className="projectCard w-96 h-96"></div>
     </div>
-   </main>
+   </div>
   );
 }
