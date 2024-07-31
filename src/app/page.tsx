@@ -16,7 +16,7 @@ import { Fullscreen } from "lucide-react";
 export default function Home() {
   return (
     <main className="absolute justify-items-center text-left text-wrap left-80 right-80 top-40 py-4">
-        <h1 className="">Who's Rutra?</h1>
+        <h1 className="" id="rutra">Who's Rutra?</h1>
         <p> 
           I'm a crazy <b>17 year old </b>with a big passion for tech and programming who's always looking for new technologies and projects to work on. <br/>
           Right now I am looking to develop on any <b>C#</b>, <b>Next.js</b>, <b>PHP</b> or <b>GO</b> project.
@@ -24,7 +24,7 @@ export default function Home() {
 
     <Separator className="my-4"/>
 
-    <h1 className=""><TbSchool/>&nbsp; Studies</h1>
+    <h1 className="" id="education"><TbSchool/>&nbsp; Education</h1>
       <ul className="">
         <li>
 
@@ -81,7 +81,7 @@ export default function Home() {
 
     <Separator className="my-4"/>
     
-    <h1><LiaToolsSolid /> &nbsp; Work</h1>
+    <h1 id="projects"><LiaToolsSolid /> &nbsp; Projects</h1>
     <div className="flex flex-wrap place place-items-center justify-center gap-4">
     <div className="projectCard">
       <h2 className="text-xl font-bold mb-4">Image To ASCII Converter</h2>
